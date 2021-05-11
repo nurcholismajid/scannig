@@ -12,7 +12,7 @@ curl -I domain.com
 
 # get headers from each subdomain using
 for i in `cat subdomain.txt`; do 
-	curl -I -s $i;
+  curl -I -s $i;
 done | vim - 
 ```
 
