@@ -6,7 +6,7 @@ curl -s https://crt.sh/?Identity=%.domain.com | grep ">*.domain.com" | sed 's/<[
 ```
 
 to get headers from each subdomain :
-```
+```Bash
 # get an header using
 curl -I domain.com
 
