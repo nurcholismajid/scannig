@@ -8,7 +8,7 @@ dig +short domain.com
 # looping for discover all ip address's subdomain
 
 for i in `cat subdomain.txt`; do
-  dig +short $i
+  echo `dig +short $i`, $i
 done | vim -
 ```
 usage : 
