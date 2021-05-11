@@ -2,6 +2,6 @@
 
 useg : 
 ```Shell
-./getSubdomain.sh example.com > subdomain.txt
+./getSubdomain.sh example.com | vim subdomain.txt
 ./getHeaders.sh subdomain.txt
 ```
