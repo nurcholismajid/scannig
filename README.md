@@ -37,12 +37,12 @@ usage :
 ## Recon
 No   | Title
 ---- | ----
-1.   | [Security.txt](#securitytxt)
-2.   | [Robots.txt](#robotstxt)
-3.   | [404 Not Found](#404-not-found-page)
-4.   | [Directory Listing (Index of)](#directory-listing-index-of)
-5.   | [Interesting Directories](#interesting-directories)
-6.   | [Bruteforce Directories](#bruteforce-directories)
+| 1.   | [Security.txt](#securitytxt)
+| 2.   | [Robots.txt](#robotstxt)
+| 3.   | [404 Not Found](#404-not-found-page)
+| 4.   | [Directory Listing (Index of)](#directory-listing-index-of)
+| 5.   | [Interesting Directories](#interesting-directories)
+| 6.   | [Bruteforce Directories](#bruteforce-directories)
 
 
 ### Security.txt
