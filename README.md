@@ -69,6 +69,6 @@ ffuf -w /path/to/wordlist.txt -u http://127.0.0.1:8080/FUZZ -o output.txt -repla
 > -replay-proxy : untuk mereplay proxy
 ```
 
-cara menggunakan FFUF : [InsiderPhD](https://www.youtube.com/watch?v=aN3Nayvd7FU)
+cara menggunakan FFUF : [InsiderPhD](https://www.youtube.com/watch?v=aN3Nayvd7FU) </br>
 wordlist : [SecList](https://github.com/danielmiessler/SecLists)
 
