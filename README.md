@@ -44,6 +44,7 @@ Hal yang perlu diperhatikan disaat melakukan Reconnaissance
 | 4.  | [Directory Listing (Index of)](#directory-listing-index-of)
 | 5.  | [Interesting Directories](#interesting-directories)
 | 6.  | [Bruteforce Directories](#bruteforce-directories)
+| 7.  | [Covers Default Vhost](#covers-default-vhost)
 
 
 ### Security.txt
@@ -82,3 +83,12 @@ ffuf -w /path/to/wordlist.txt -u http://127.0.0.1:8080/FUZZ -o output.txt -repla
 cara menggunakan FFUF : [InsiderPhD](https://www.youtube.com/watch?v=aN3Nayvd7FU) </br>
 wordlist : [SecList](https://github.com/danielmiessler/SecLists)
 
+### Covers Default Vhost
+Ketika kita pertama kali mengakses webserver, sering kali kita mengganti nama host menggunakan IP atau host acak untuk melakukan request/permintaan pada **Host Headers**, caranya yaitu dengan mengganti request pada web proxy atau bisa gunakan ini :
+
+```Bash
+curl -H "Host: ...." http://127.0.0.1/
+```
+
+source : 1. [Possible virtual host found](https://www.acunetix.com/vulnerabilities/web/possible-virtual-host-found/) </br>
+         2. [Headers Attack](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
