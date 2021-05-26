@@ -84,10 +84,13 @@ cara menggunakan FFUF : [InsiderPhD](https://www.youtube.com/watch?v=aN3Nayvd7FU
 wordlist : [SecList](https://github.com/danielmiessler/SecLists)
 
 ### Covers Default Vhost
-Ketika kita pertama kali mengakses webserver, sering kali kita mengganti nama host menggunakan IP atau host acak untuk melakukan request/permintaan pada **Host Headers**, caranya yaitu dengan mengganti request pada web proxy atau bisa gunakan ini :
+Ketika kita pertama kali mengakses webserver, sering kali kita mengganti nama host menggunakan IP atau host acak untuk melakukan request/permintaan pada **Host Headers** untuk mendapatkan informasi target, caranya yaitu dengan mengganti request pada web proxy atau bisa gunakan ini :
 
 ```Bash
+# NO SSL/TLS
 curl -H "Host: ...." http://127.0.0.1/
+# SSL/TLS
+curl -H "Host: ...." https://127.0.0.1/
 ```
 
 source : [Possible virtual host found](https://www.acunetix.com/vulnerabilities/web/possible-virtual-host-found/), or [Headers Attack](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
