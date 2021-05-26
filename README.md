@@ -90,5 +90,4 @@ Ketika kita pertama kali mengakses webserver, sering kali kita mengganti nama ho
 curl -H "Host: ...." http://127.0.0.1/
 ```
 
-source : 1. [Possible virtual host found](https://www.acunetix.com/vulnerabilities/web/possible-virtual-host-found/) </br>
-         2. [Headers Attack](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
+source : [Possible virtual host found](https://www.acunetix.com/vulnerabilities/web/possible-virtual-host-found/), or [Headers Attack](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
