@@ -34,7 +34,8 @@ usage :
 ```
 
 
-## Recon
+# Recon
+Hal yang perlu diperhatikan disaat melakukan Reconnaissance
 | No  | Title
 | --- | ----
 | 1.  | [Security.txt](#securitytxt)
