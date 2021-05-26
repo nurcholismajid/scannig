@@ -35,6 +35,13 @@ usage :
 
 
 ## Recon
+1. [Security.txt](#securitytxt)
+2. [Robots.txt](#robotstxt)
+3. [404 Not Found](#404-not-found-page)
+4. [Directory Listing (Index of)](#directory-listing-index-of)
+5. [Interesting Directories](#interesting-directories)
+6. [Bruteforce Directories](#bruteforce-directories)
+
 
 ### Security.txt
 Untuk memudahkan bagi para security researchers untuk melakukan pentest pada website, contohnya scope yang dapat dilakukan pentest, policy, contact, etc.
