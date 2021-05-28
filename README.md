@@ -45,6 +45,7 @@ Hal yang perlu diperhatikan disaat melakukan Reconnaissance
 | 5.  | [Interesting Directories](#interesting-directories)
 | 6.  | [Bruteforce Directories](#bruteforce-directories)
 | 7.  | [Covers Default Vhost](#covers-default-vhost)
+| 8.  | [Covers Aliases In TLS Certificates](#covers-aliases-in-tls-certificates)
 
 
 ### Security.txt
@@ -94,3 +95,22 @@ curl -H "Host: ...." https://127.0.0.1/
 ```
 
 source : [Possible virtual host found](https://www.acunetix.com/vulnerabilities/web/possible-virtual-host-found/), or [Headers Attack](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
+
+
+### Covers Aliases In TLS Certificates
+Kita juga pada tahap Reconnisee ini mencaritahu tentang SANs (Subject Alternative Names), disini kita tahu sia saja yang menggunakan Ssl/TLS tersebut, ada 2 cara kita bisa pakai manual dengan pilih tanda gembok dipojok kiri atas, atau bisa kita gunakan Openssl dengan perintah berikut :
+
+```Bash
+openssl s_client -connect website.com:443 | openssl x509 -noout -text | grep DNS:
+```
+Source : [How To Check Subject Alternative Names](https://stackoverflow.com/questions/13127352/how-to-check-subject-alternative-names-for-a-ssl-tls-certificate)
+
+
+### Check Headers
+Dalam headers juga biasanya terdapat informasi penting, cara check suatu header pada website kita bisa gunakan perintah berikut :
+
+```Bash
+curl -I websitename.com
+```
+
+source : [MDN Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
