@@ -46,6 +46,7 @@ Hal yang perlu diperhatikan disaat melakukan Reconnaissance
 | 6.  | [Bruteforce Directories](#bruteforce-directories)
 | 7.  | [Covers Default Vhost](#covers-default-vhost)
 | 8.  | [Covers Aliases In TLS Certificates](#covers-aliases-in-tls-certificates)
+| 9.  | [Check Headers](check-headers)
 
 
 ### Security.txt
