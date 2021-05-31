@@ -47,6 +47,7 @@ Hal yang perlu diperhatikan disaat melakukan Reconnaissance
 | 7.  | [Covers Default Vhost](#covers-default-vhost)
 | 8.  | [Covers Aliases In TLS Certificates](#covers-aliases-in-tls-certificates)
 | 9.  | [Check Headers](#check-headers)
+| 10. | [Visual Reconnaissance](#visual-reconnaissance)
 
 
 ### Security.txt
@@ -115,3 +116,16 @@ curl -I websitename.com
 ```
 
 source : [MDN Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+
+
+### Visual Reconnaissance
+Visual Reconnaissance digunakan ketika kita ingin mengetahui web aplikasi apa saja yang dihosting dibawah nama targetnya contohnya **example.com** yaitu **\*.example.com**, caranya bisa kita gunakan **[aquatone](https://github.com/michenriksen/aquatone)** :
+
+```Bash
+aquatone-discovery --domain example.com
+aquatone-scan --domain example.com
+aquatone-gather --domain example.com
+aquatone-takeover --domain example.com
+```
+
+source : [How To Use Aquatone](https://michenriksen.com/blog/aquatone-tool-for-domain-flyovers/)
